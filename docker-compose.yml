@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+      MONGO_INITDB_DATABASE: admin
+    volumes:
+      - mongodb_data:/data/db
+      - ./emissions:/data/emissions
+      - ./newcars:/data/newcars
+      - ./usedcars:/data/usedcars
+      - ./init-scripts:/docker-entrypoint-initdb.d
+      - ./logs:/logs
+volumes:
+  mongodb_data:
+
