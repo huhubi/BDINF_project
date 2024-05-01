@@ -1,6 +1,4 @@
-C-J59-0.string(),
-C-A10-0.string(),
-C-EK7-0.string(),
+C-J59-0.string()
+C-A10-0.string()
+C-EK7-0.string()
 F-ISIS-1.string()
-
-

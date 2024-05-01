@@ -8,7 +8,7 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: example
-      MONGO_INITDB_DATABASE: admin
+      MONGO_INITDB_DATABASE: mydatabase
     volumes:
       - mongodb_data:/data/db
       - ./emissions:/data/emissions
